@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    body{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #ddd;
+        align-items: center;
+        justify-content: center;
+        background: rgb(4, 0, 53);
+        background-size: cover;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .container{
+        display: flex;
+        width: 50%;
+        height: 50%;
+        padding: 20px 20px;
+        
+    }
+
+    .box{
+        flex: 30%;
+        display: table;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        background: url(im1.jpg);
+        color: rgb(17, 0, 36);
+        padding: 30px 30px;
+        border-radius: 20px;
+        border: 5px solid #fff;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .box img{
+        border-radius: 50%;
+        border: 3px solid #fff;
+        height: 250px;
+        width: 250px;
+    }
+    .box .table tr, .box .table td, .box .table th{
+        background-color: rgba(225, 220, 245, 0.678);
+        color: rgb(1, 0, 14);
+        font-weight: 1000;
+        
+    }
+
+    .box .table th{
+        animation: exam 5s infinite;
+    }
+
+    @keyframes exam{
+        from{color:rgb(1, 0, 14);}
+        to{color: #ff0000;}
+    }
+
+    .box .left , .box .right{
+        color: rgb(27, 3, 247);
+        font-weight: 1000;
+    }
+
+    .box ul{
+        
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+        color: rgb(27, 3, 247);
+        font-weight: bold;
+        font-weight: 1000;
+    }
+
+    .box ul li h2{
+        list-style: none;
+        margin-top: 30px;
+        font-weight: 500;
+        font-family: 'Poppins';
+        color: #fff;
+        animation: example 5s infinite;
+    }
+
+    @keyframes example{
+        from{color:#fff;;}
+        to{color: #ff0000;}
+    }
+
+    .box ul li h2:hover{
+        color: turquoise;
+        font-weight: 1000;
+    }
+
+    .box ul li h5{
+        list-style: none;
+        margin-top: 30px;
+        font-weight: 500;
+        font-family: 'Poppins';
+        color: rgb(255, 58, 24);
+    }
+
+    .box ul li h5:hover{
+        color: rgb(26, 255, 26);
+        font-weight: 800;
+    }
+
+    .box ul li{
+        list-style: none;
+        margin-top: 30px;
+        font-weight: 500;
+        font-family: 'Poppins';
+        
+    }
+
+    .box ul li .a{
+        display: block;
+        padding: 10px;
+        margin: 1.5rem 0;
+        background: rgb(255, 252, 64);
+        color: rgb(19, 2, 59);
+        font-size: 2rem;
+        border-radius: 5rem;
+        font-family: 'Poppins';
+        text-decoration: none;
+        font-weight: 1000;
+        opacity:0.6;
+    }
+
+    .box ul li .a:hover{
+        background: red;
+    }
+
+    .box ul li i{
+        cursor: pointer;
+        margin: 10px;
+        font-size: 60px;
+    }
+
+    .box ul li i:hover{
+        opacity: 1;
+    }
+
+    .box .fa-linkedin-square, .box .fa-instagram{
+        color: rgb(255, 0, 221);
+    }
+
+    .box .fa-linkedin-square:hover, .box .fa-instagram:hover{
+        color: #04cdff;
+        
+    }
+
+    
+
+    @media screen and (max-width: 1068px) 
+    {
+        .container{
+            display: table;
+        }
+
+        .box{
+            width: 100%;
+        }
+
+    }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link href="a.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+              
+            }
+            * {
+              box-sizing: border-box;
+            }
+
+            .form-popup {
+              position: fixed;
+              bottom: 0;
+              right: 15px;
+              border: 3px solid #360202;
+            }
+
+            input[type=text],
+            select,
+            textarea {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #030020;
+              border-radius: 4px;
+              box-sizing: border-box;
+              margin-top: 8px;
+              margin-bottom: 16px;
+              resize: vertical;
+              color: #4c1cf8;
+              
+            }
+
+            label{
+              font-size: x-large;
+              font-style: italic;
+              color: crimson;
+              font-weight: 800;
+            }
+
+            input[type=submit] {
+              background-color: #4cd9c6;
+              color: #4c1cf8;
+              padding: 15px 25px;
+              border: none;
+              border-radius: 7px;
+              cursor: pointer;
+            }
+            input[type=submit]:hover {
+              background-color: #6fe8d7;
+            }
+            .container {
+              border-radius: 8px;
+              background-color: #e6e6e6;
+              padding: 15px;
+            }
+
+            .box {
+              align-items: center;
+            }
+          </style>
+    </head>
+
+    <body>
+      <div class="container">
+          <div class="box">
+            <div class="form-popup" id="myForm"></div>
+              <form action="/form/submit" method="POST">
+                  <h1><u>Contact Form</u></h1>
+                  <label for="fname"><u>Name</u></label>
+                  <input type="text" id="fname" name="name" placeholder="Type your name..">
+                  <!--<label for="lname"><u>Last Name</u></label>
+                  <input type="text" id="lname" name="surname" placeholder="Type your last name..">-->
+                  <label for="lname"><u>E-mail Address</u></label>
+                  <input type="text" id="mail" name="e-mail" placeholder="Type your e-mail..">
+                  <label for="ci"><u>Country</u></label>
+                  <select id="country" name="country">
+                      <option value="italy">India</option>
+                      <option value="italy">Italy</option>
+                      <option value="spain">Spain</option>
+                      <option value="france">France</option>
+                  </select>
+                  <label for="message"><u>Message</u></label>
+                  <textarea id="message" name="message" placeholder="Type your message.." style="height:200px"></textarea>
+                  <input type="submit" value="Send">
+                </form>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
